@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+   <div class="container">
+    <div class="container-header">
+        <p>Financeiro</p>
+    </div>
+        <form> 
+            <div class="lancamento-after">
+            <div class="lancamento">
+                <header>Lançamento</header>
+                <h4>Classificação:</h4>
+                <select id="lancamento-sel-classificacao">
+                    <option value="0">Juliano</option>
+                    <option value="1">Mônica</option>                    
+                    <option value="10">Apartamento</option>
+                    <option value="11">Bancos</option>
+                    <option value="12">Educação</option>
+                    <option value="13">Saúde</option>
+                    <option value="14">Carro</option>
+                    <option value="15">Alimentação</option>
+                    <option value="16">Projetos</option>
+                    <option value="17">Entreterimento</option>
+                </select>
+                <h4>Opção:</h4>                
+                <select id="lancamento-opcao">
+                    <option value="0">Entrada</option>
+                    <option value="1" selected>Saída</option>                    
+                </select>
+                <h4>Tipo:</h4>
+                <select id="lancamento-tipo">
+                    <option value="0">Fixo</option>
+                    <option value="1" selected>Variável</option>                    
+                </select>
+                <h4>Efetivo:</h4>   
+                <select id="lancamento-efetivo">
+                    <option value="0">Previsto</option>
+                    <option value="1" selected>Real</option>                    
+                </select>                                               
+                <input type="text" id="lancamento-inp-desc" placeholder="Descrição"/>
+                <input type="date" id="lancamento-inp-date"/>
+                <input type="number" min="0.00" max="100,000.00" step="0.01" class="lancamento-inp" placeholder="Valor"/>                
+                <input type="text" class="lancamento-inp" placeholder="Observação"/>
+                <button type="submit" id="lancamento-bnt-save">
+                    Salvar
+                </button>
+            </div>
+        </div>           
+        </form>
+   </div>
+</body>
+</html>
